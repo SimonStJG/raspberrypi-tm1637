@@ -1,10 +1,4 @@
-import sys
-
 from setuptools import setup
-
-# Remove current dir from sys.path, otherwise setuptools will peek up our
-# module instead of system.
-sys.path.pop(0)
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -29,5 +23,5 @@ setup(
         'License :: OSI Approved :: MIT License',
     ],
     python_requires='>=3',
-    install_requires=['wiringpi']
+    install_requires=['gpiozero']
 )
